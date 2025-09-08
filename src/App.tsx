@@ -1,8 +1,12 @@
+import { Header } from "./components/Header/Header"
+import { SolarSystem } from "./components/SolarSystem/SolarSystem"
+
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl text-amber-300">Solar System</h1>
+      <Header />
+      <SolarSystem />
     </>
   )
 }
