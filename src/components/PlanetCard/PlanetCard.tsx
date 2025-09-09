@@ -5,9 +5,13 @@ interface IPlanetCard {
 
 export function PlanetCard({ planetImage, planetName }: IPlanetCard) {
   return (
-    <>
-      <p> {planetName}</p>
-      <img src={planetImage} alt={`Planeta ${planetName}`} />
-    </>
+    <article className="w-[300px] h-[100px] bg-amber-400 flex flex-col items-center justify-center p-1">
+      <img
+        className="w-[100px]"
+        src={planetImage}
+        alt={`Planeta ${planetName}`}
+      />
+      <p>{planetName}</p>
+    </article>
   );
 };

@@ -7,7 +7,7 @@ import SaturnoImg from '../images/Saturno.png';
 import Uranoimg from '../images/Urano.png';
 import Netunoimg from '../images/Netuno.png';
 
-const Planets = [
+export const Planets = [
   { name: 'Mercúrio', image: MercurioImg },
   { name: 'Vênus', image: VenusImg },
   { name: 'Terra', image: TerraImg },
@@ -17,5 +17,3 @@ const Planets = [
   { name: 'Urano', image: Uranoimg },
   { name: 'Netuno', image: Netunoimg },
 ];
-
-export default Planets;
