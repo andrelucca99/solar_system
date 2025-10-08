@@ -24,7 +24,7 @@ export function SolarSystem() {
           />
         ))}
       </section>
-      <section className="w-full h-[600px] bg-red-500">
+      <section className="w-full h-[600px]">
         {selectedPlanet && (
           <>
             <InfoMission
