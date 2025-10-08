@@ -11,8 +11,6 @@ export function SolarSystem() {
     setSelectedPlanet(planetName);
   }
 
-  const planetInfo = Planets.find((planet) => planet.name === selectedPlanet);
-
   return (
     <>
       <Title headline="Planetas" />
@@ -26,9 +24,15 @@ export function SolarSystem() {
           />
         ))}
       </section>
-      <section className="w-full h-[300px]">
-        {selectedPlanet && planetInfo && (
-          <InfoMission name={planetInfo.name} />
+      <section className="w-full h-[600px] bg-red-500">
+        {selectedPlanet && (
+          <>
+            <InfoMission
+              name={selectedPlanet}
+              image={Planets.find((planet) => planet.name === selectedPlanet)?.image || ""}
+            />
+            <p>missions</p>
+          </>
         )}
       </section>
     </>

@@ -11,7 +11,7 @@ export function PlanetCard({ planetImage, planetName, onPlanetClick }: IPlanetCa
         className="w-[100px] cursor-pointer"
         src={planetImage}
         alt={`Planeta ${planetName}`}
-        onClick={() => onPlanetClick(planetImage)}
+        onClick={() => onPlanetClick(planetName)}
       />
       <p>{planetName}</p>
     </article>
