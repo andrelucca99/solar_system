@@ -25,14 +25,21 @@ export function SolarSystem() {
         ))}
       </section>
       <section className="w-full h-[600px]">
-        {selectedPlanet && (
-          <>
-            <InfoMission
-              name={selectedPlanet}
-              image={Planets.find((planet) => planet.name === selectedPlanet)?.image || ""}
-            />
-            <p>missions</p>
-          </>
+        {selectedPlanet ? (
+          selectedPlanet && (
+            <>
+              <InfoMission
+                name={selectedPlanet}
+                image={Planets.find((planet) => planet.name === selectedPlanet)?.image || ""}
+              />
+              <p>missions</p>
+            </>
+          )
+        ) : (
+          <InfoMission
+            name={Planets[0].name}
+            image={Planets[0].image}
+          />
         )}
       </section>
     </>
